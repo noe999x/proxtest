@@ -129,7 +129,7 @@ class mommy_kafka:
                 response = requests.get(url, proxies=proxy, timeout=10)
                 response.raise_for_status()
                 if response.status_code == 200:
-                    print(f'\r Try with: {H}{proxy_address.strip()}{P} Succsess connected!                     ')
+                    print(f'\r Try with: {H}{proxy_address.strip()}{P} Success connected!                     ')
                     with open(f'LIVE/LIVE_SOCKS{num}_{link}.txt', 'a') as live_file:
                         live_file.write(proxy_address.strip() + '\n')
                         self.live.append(proxy_address.strip())
